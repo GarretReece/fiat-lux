@@ -1,0 +1,3 @@
+[submodule "IR_Black-OSX"]
+	path = IR_Black-OSX
+	url = https://github.com/justincase/IR_Black-OSX.git
