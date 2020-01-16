@@ -9,7 +9,7 @@ fi
 
 if [ ! -d ~/.vim ]; then
 	echo "[+] cloning vim setup into ~/.vim"
-	git clone https://github.com/GarretReece/vimsetup.git ~/.vim
+	git clone git@github.com:GarretReece/vimsetup.git ~/.vim
 	cd ~/.vim
 	git submodule init
 	git submodule update
