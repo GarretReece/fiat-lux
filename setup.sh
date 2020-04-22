@@ -7,6 +7,13 @@ else
 	echo "[!] existing bash_profile discovered, doing nothing"
 fi
 
+if [ ! -f ~/.zshrc ]; then
+    echo "[+] linking in zshrc"
+    ln -s $DIR/zshrc ~/.zshrc
+else
+    echo "[!] existing zshrc discovered, doing nothing"
+fi
+
 if [ ! -d ~/.vim ]; then
 	echo "[+] cloning vim setup into ~/.vim"
 	git clone git@github.com:GarretReece/vimsetup.git ~/.vim
